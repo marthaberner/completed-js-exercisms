@@ -2,6 +2,10 @@ function Robot() {
   this.name = generateName();
 }
 
+Robot.prototype.reset = function () {
+  this.name = generateName();
+}
+
 function generateName() {
   var letters = "";
   var nums = "";
